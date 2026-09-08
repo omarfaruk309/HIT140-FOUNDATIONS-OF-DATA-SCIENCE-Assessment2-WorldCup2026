@@ -1,0 +1,20 @@
+Analytic question: Do winning teams have a significantly higher average number of corners than losing teams?
+Population: All supplied unequal-score matches with valid corners and winner/loser information.
+Population size: 79
+Sample size: 40
+Sampling: simple random sample of 40 matches without replacement; random_state=42; Q1 stage groups are formed after sampling; winner/loser pairs remain together.
+
+                   count  mean  median  sample std  sample variance   min   max   Q1    Q3   IQR
+Winner Corners      40.0  5.75     5.0    3.439961        11.833333   2.0  19.0  3.0  7.25  4.25
+Loser Corners       40.0  3.70     3.0    2.884085         8.317949   1.0  14.0  2.0  5.00  3.00
+Corner Difference   40.0  2.05     2.0    5.178605        26.817949 -11.0  18.0  0.0  4.00  4.00
+
+ Estimate  Standard error  Degrees of freedom  t critical  Lower 95% CI  Upper 95% CI
+     2.05        0.818809                  39    2.022691      0.393802      3.706198
+H0: mu_difference = 0
+H1: mu_difference > 0
+Alpha: 0.05
+t-statistic: 2.503635371920806
+p-value: 0.008293466055310417
+Decision: Reject H0
+There is statistical evidence that winning teams have more corners on average than losing teams.
