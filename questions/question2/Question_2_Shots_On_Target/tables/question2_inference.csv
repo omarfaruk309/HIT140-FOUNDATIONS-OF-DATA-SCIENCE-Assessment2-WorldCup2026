@@ -1,0 +1,2 @@
+estimate,standard_error,df,ci_lower,ci_upper,t_statistic,p_value,alpha,decision
+7.85,0.38322183439748625,39,7.0748606752043735,8.625139324795626,-0.39141819838067216,0.6976186174206008,0.05,Fail to reject H0
