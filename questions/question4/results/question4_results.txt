@@ -1,0 +1,20 @@
+Analytic question: Do losing teams receive significantly more yellow cards on average than winning teams?
+Population: All supplied unequal-score matches with valid yellow cards and winner/loser information.
+Population size: 79
+Sample size: 40
+Sampling: simple random sample of 40 matches without replacement; random_state=42; Q1 stage groups are formed after sampling; winner/loser pairs remain together.
+
+                        count  mean  median  sample std  sample variance  min  max   Q1   Q3  IQR
+Winner Yellow Cards      40.0  0.90     1.0    0.981887         0.964103  0.0  3.0  0.0  1.0  1.0
+Loser Yellow Cards       40.0  1.55     1.5    1.131144         1.279487  0.0  5.0  1.0  2.0  1.0
+Yellow Card Difference   40.0  0.65     1.0    1.331088         1.771795 -3.0  5.0  0.0  1.0  1.0
+
+ Estimate  Standard error  Degrees of freedom  t critical  Lower 95% CI  Upper 95% CI
+     0.65        0.210463                  39    2.022691      0.224297      1.075703
+H0: mu_difference = 0
+H1: mu_difference > 0
+Alpha: 0.05
+t-statistic: 3.0884219622772893
+p-value: 0.0018492456741566272
+Decision: Reject H0
+There is statistical evidence that losing teams receive more yellow cards on average than winning teams.
